@@ -4,7 +4,8 @@ public class Cliente extends Thread {
 	private Conta conta = new Conta();
 	
 	Cliente(String num, float saldo){
-		this.conta.setSaldo(num, saldo);
+		this.conta.setNumConta(num);
+		this.conta.setSaldo(saldo);
 	}
 	
 	public float getSaldo(){

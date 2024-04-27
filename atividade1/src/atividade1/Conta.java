@@ -4,16 +4,7 @@ public class Conta {
 	private String num = "";
 	private float saldo = 0.0f;
 	
-	Conta(){
-		
-	}
-	
-	Conta(String num, float valor) {
-		this.num = num;
-		this.saldo = valor;
-	}
-	
-	public String getNum() {
+	public String getNumConta() {
 		return this.num;
 	}
 	
@@ -21,8 +12,11 @@ public class Conta {
 		return this.saldo;
 	}
 	
-	public void setSaldo(String num, float saldo) {
+	public void setNumConta(String num) {
 		this.num = num;
+	}
+	
+	public void setSaldo(float saldo) {
 		this.saldo = saldo;
 	}
 }
