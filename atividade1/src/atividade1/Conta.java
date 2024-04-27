@@ -4,6 +4,10 @@ public class Conta {
 	private String num = "";
 	private float saldo = 0.0f;
 	
+	Conta(){
+		
+	}
+	
 	Conta(String num, float valor) {
 		this.num = num;
 		this.saldo = valor;

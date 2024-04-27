@@ -1,14 +1,14 @@
 package atividade1;
 
 public class Cliente extends Thread {
-	private Conta conta;
+	private Conta conta = new Conta();
 	
 	Cliente(String num, float saldo){
-		conta.setSaldo(num, saldo);
+		this.conta.setSaldo(num, saldo);
 	}
 	
 	public float getSaldo(){
-		return conta.getSaldo();
+		return this.conta.getSaldo();
 	}
 	
 	public void comprar() {
