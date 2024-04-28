@@ -1,22 +1,21 @@
 package atividade1;
 
-public class Conta {
-	private String num = "";
-	private float saldo = 0.0f;
-	
-	public String getNumConta() {
-		return this.num;
-	}
-	
-	public float getSaldo() {
-		return this.saldo;
-	}
-	
-	public void setNumConta(String num) {
-		this.num = num;
-	}
-	
-	public void setSaldo(float saldo) {
-		this.saldo = saldo;
-	}
+class Conta {
+    private double saldo;
+
+    public Conta(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public synchronized void depositar(double valor) {
+        saldo += valor;
+    }
+
+    public synchronized void sacar(double valor) {
+        saldo -= valor;
+    }
 }
